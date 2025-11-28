@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini EconGraphs Demo</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .video, .text, .graph {
+      flex: 1;
+      min-width: 320px;
+    }
+
+    iframe {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Economics Interactive Demo</h1>
+
+  <!-- 视频讲解 -->
+  <div class="section video">
+    <h2>🎥 视频讲解</h2>
+    <!-- 你可以替换成 Bilibili / YouTube / UCLA 的媒体链接 -->
+    <iframe 
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+      height="315"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- 文字讲解 -->
+  <div class="section text">
+    <h2>📘 文字讲解</h2>
+    <p>
+      在这里填写你的经济学解释。你可以写：
+      <br><br>
+      · 概念介绍  
+      · 模型推导步骤  
+      · 案例  
+      · 数学式子  
+      · 课堂问题  
+      <br><br>
+      同时也支持 HTML（粗体、斜体、方程截图、图标、分段结构）。
+    </p>
+  </div>
+
+  <!-- Desmos 图 -->
+  <div class="section graph">
+    <h2>📈 交互式图表</h2>
+
+    <!-- 你给的 Desmos embed snapshot -->
+    <iframe 
+      src="https://www.desmos.com/calculator/8cpqxecdvl?embed"
+      height="500"
+      frameborder="0">
+    </iframe>
+  </div>
+
+</div>
+
+</body>
+</html>
 
