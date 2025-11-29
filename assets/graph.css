@@ -1,49 +1,131 @@
-/* Graph page (single desmos graph) */
+ * {
+      box-sizing: border-box;
+    }
 
-.graph-wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 24px 18px 60px;
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;          /* 页面最大宽度，自适应缩小 */
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 0 0 32px;
+      font-size: 1.8rem;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 1.3rem;
+    }
+
+    .section {
+      background: #fff;
+      padding: 20px 20px 24px;
+      border-radius: 12px;
+      margin-bottom: 28px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    /* Desmos 图：用比例盒子自适应宽度 */
+    .graph-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;       /* 比例可以改，比如想更高一点改成 4 / 3 */
+    }
+
+    #discrete-sd {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* 视频同样用比例盒子 */
+    .video-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 16px 10px 32px;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      .section {
+        padding: 16px 14px 20px;
+        border-radius: 10px;
+      }
+    }
+/* === 下拉菜单：最终干净版 === */
+
+/* 外壳：Concepts / Exercises 各自一块 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 0 8px;              /* 稍微加宽一点，方便鼠标移动 */
 }
 
-.graph-header {
-  margin-bottom: 12px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* 文本按钮本身 */
+.dropdown-btn {
+    cursor: pointer;
+    padding: 12px 4px;           /* 增大可点击区域 */
+    display: inline-block;
 }
 
-.graph-title {
-  font-size: 1.3rem;
-  font-weight: 600;
+/* 下拉内容：默认隐藏 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;                   /* 紧贴按钮下方，没有缝隙 */
+    left: 0;
+    background: white;
+    padding: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 150px;
+    z-index: 999;
 }
 
-.graph-toolbar {
-  display: flex;
-  gap: 10px;
+/* hover 在外壳 或 菜单内部 时都保持展开 */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-.graph-btn {
-  padding: 6px 14px;
-  border-radius: 8px;
-  background: #111827;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: .85rem;
-  transition: .2s;
+/* 关键：加一个“隐形桥梁”，防止鼠标斜着走时掉 hover */
+.dropdown::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 10px;                /* 桥梁高度：10px 的缓冲区 */
 }
-
-.graph-btn:hover {
-  background: #1f2937;
-}
-
-#calculator {
-  width: 100%;
-  height: 540px;
-  margin-top: 18px;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid #e5e7eb;
-}
-
