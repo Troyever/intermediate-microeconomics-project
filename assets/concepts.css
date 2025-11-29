@@ -245,6 +245,13 @@ nav {
     border-radius: 6px;
     z-index: 999;
 }
+nav {
+    position: sticky;  /* 你原本可能已经有 */
+    top: 0;
+    background: white;
+    z-index: 1000;
+}
+
 
 /* 当 hover wrapper 时显示 */
 .dropdown:hover .dropdown-content {
