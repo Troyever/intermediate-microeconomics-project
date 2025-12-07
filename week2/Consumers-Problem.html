@@ -119,7 +119,7 @@ document.getElementById('export-desmos-btn').addEventListener('click', function 
   Calc.asyncScreenshot(opts, function (dataUrl) {
     const a = document.createElement('a');
     a.href = dataUrl;
-    a.download = 'Consumer's-Problem.png';   
+    a.download = 'Consumers-Problem.png';   
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
