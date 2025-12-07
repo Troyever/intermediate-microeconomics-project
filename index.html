@@ -50,6 +50,45 @@
     top: 100%;
     height: 10px; /* 关键 */
 }
+  .view-toggle {
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;   /* 居中 */
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #6b7280;            /* 灰一点 */
+}
+
+.view-label {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+}
+
+.view-link {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.view-link:hover {
+  border-color: #d1d5db;
+  background-color: #f3f4f6;
+}
+
+.view-link.active {
+  background-color: #111827;   /* 和你 navbar 黑色呼应 */
+  color: #ffffff;
+  border-color: #111827;
+}
+
+.view-separator {
+  color: #9ca3af;
+}
 </style>
 
 </head>
