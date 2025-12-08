@@ -12,7 +12,7 @@
     }
 
     .container {
-      max-width: 1000px;          /* 页面最大宽度，自适应缩小 */
+      max-width: 1000px;          /* Size self adjustments */
       margin: 0 auto;
       padding: 24px 16px 40px;
     }
@@ -36,11 +36,11 @@
       box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     }
 
-    /* Desmos 图：用比例盒子自适应宽度 */
+    /* Desmos graph：sel adjust width */
     .graph-wrapper {
       position: relative;
       width: 100%;
-      aspect-ratio: 16 / 9;       /* 比例可以改，比如想更高一点改成 4 / 3 */
+      aspect-ratio: 16 / 9;       /* ratio can change i.e; 4 / 3 */
     }
 
     #calculator {
@@ -57,7 +57,7 @@
       height: 100%;
     }
 
-    /* 视频同样用比例盒子 */
+    /* video adapt size automatically */
     .video-frame {
       position: relative;
       width: 100%;
@@ -162,27 +162,27 @@
     display: block;
   }
 
-/* === 下拉菜单：最终干净版 === */
+/* === drop down menu === */
 
-/* 外壳：Concepts / Exercises 各自一块 */
+/* shell：Concepts / Exercises */
 .dropdown {
     position: relative;
     display: inline-block;
-    padding: 0 8px;              /* 稍微加宽一点，方便鼠标移动 */
+    padding: 0 8px;              /* width */
 }
 
-/* 文本按钮本身 */
+/* button */
 .dropdown-btn {
     cursor: pointer;
-    padding: 12px 4px;           /* 增大可点击区域 */
+    padding: 12px 4px;           /* increase to make clickable area larget */
     display: inline-block;
 }
 
-/* 下拉内容：默认隐藏 */
+/* drop down contents: when not hover, keep off */
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;                   /* 紧贴按钮下方，没有缝隙 */
+    top: 100%;                   
     left: 0;
     background: white;
     padding: 8px 0;
@@ -192,17 +192,16 @@
     z-index: 999;
 }
 
-/* hover 在外壳 或 菜单内部 时都保持展开 */
+/* when hover on shell -> display drop down contents */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* 关键：加一个“隐形桥梁”，防止鼠标斜着走时掉 hover */
 .dropdown::before {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
     top: 100%;
-    height: 10px;                /* 桥梁高度：10px 的缓冲区 */
+    height: 10px;          
 }
