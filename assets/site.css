@@ -16,7 +16,7 @@
       text-decoration: none;
     }
 
-    /* 顶部导航栏 */
+    /* navigation bar */
 
     .navbar {
       position: sticky;
@@ -111,7 +111,7 @@
       background: rgba(255, 255, 255, 0.1);
     }
 
-    /* 页面主体 */
+    /* page body */
 
     .page {
       max-width: 1100px;
@@ -133,7 +133,7 @@
       color: #4b5563;
     }
 
-    /* Week 卡片网格 */
+    /* Week sections */
 
     .weeks-grid {
       display: grid;
@@ -221,7 +221,7 @@
       background: #020617;
     }
 
-    /* 底部 About / Credits */
+    /* bottom About / Credits */
 
     .footer {
       margin-top: 28px;
