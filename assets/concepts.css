@@ -36,7 +36,7 @@ nav {
     margin-bottom: 20px;
 }
 
-/* 只控制 dropdown-content 的展示，不碰布局 */
+/* dropdown-content */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -47,7 +47,7 @@ nav {
     z-index: 999;
 }
 
-/* 当 hover wrapper 时显示 */
+/* when hover wrapper*/
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -235,27 +235,23 @@ nav {
       .container { padding-inline: 14px; }
       h1 { font-size: 1.5rem; }
     }
-/* === 下拉菜单：最终干净版 === */
-
-/* 外壳：Concepts / Exercises 各自一块 */
+/* === drop down：cleanest version=== */
 .dropdown {
     position: relative;
     display: inline-block;
-    padding: 0 8px;              /* 稍微加宽一点，方便鼠标移动 */
+    padding: 0 8px;             
 }
 
-/* 文本按钮本身 */
 .dropdown-btn {
     cursor: pointer;
-    padding: 12px 4px;           /* 增大可点击区域 */
+    padding: 12px 4px;          
     display: inline-block;
 }
-
-/* 下拉内容：默认隐藏 */
+/* drop down content: do not display when mouse is not on the button */
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;                   /* 紧贴按钮下方，没有缝隙 */
+    top: 100%;                  
     left: 0;
     background: white;
     padding: 8px 0;
@@ -265,19 +261,18 @@ nav {
     z-index: 999;
 }
 
-/* hover 在外壳 或 菜单内部 时都保持展开 */
+/* when hover,keep drop down open */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* 关键：加一个“隐形桥梁”，防止鼠标斜着走时掉 hover */
 .dropdown::before {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
     top: 100%;
-    height: 10px;                /* 桥梁高度：10px 的缓冲区 */
+    height: 10px;            
 }
 nav {
     position: sticky;
