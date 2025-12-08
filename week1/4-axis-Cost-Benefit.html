@@ -75,24 +75,34 @@
     });
 
   //Export Desmos
-document.getElementById('export-desmos-btn').addEventListener('click', function () {
-  const opts = {
-    format: 'png',        // 'png' /'svg'
-    width: 1200,          
-    height: 800,         
-    targetPixelRatio: 2,   
-    showLabels: true
-  };
+document.addEventListener("navbar-loaded", function () {
+  const btn = document.getElementById("export-desmos-btn");
 
-  Calc.asyncScreenshot(opts, function (dataUrl) {
-    const a = document.createElement('a');
-    a.href = dataUrl;
-    a.download = '4-axis-Cost-Benefit.png';   //--Change the file name-
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+  if (!btn) {
+    console.warn("export-desmos-btn not found after navbar load");
+    return;
+  }
+
+  btn.addEventListener("click", function () {
+    const opts = {
+      format: 'png',
+      width: 1200,
+      height: 800,
+      targetPixelRatio: 2,
+      showLabels: true,
+    };
+
+    Calc.asyncScreenshot(opts, function (dataUrl) {
+      const a = document.createElement("a");
+      a.href = dataUrl;
+      a.download = "4-axis-Cost-Benefit.png";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    });
   });
 });
+
 
   </script>
 </body>
