@@ -52,5 +52,27 @@
 <script src="../assets/desmos-loader.js"></script>
     <!--Export Desmos-->
 <script src="../assets/export-desmos.js?v=1"></script>
+  <!-- Import text-->
+<script src="/intermediate-microeconomics-project/explanations.js"></script>
+
+<!-- Automatically fill in texts -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const boxes = document.querySelectorAll("[data-explain-id]");
+
+    boxes.forEach(function (box) {
+      const id = box.dataset.explainId; // 读 data-explain-id 的值
+
+      if (window.EXPLANATIONS && EXPLANATIONS[id]) {
+        box.innerHTML = EXPLANATIONS[id];   
+      } else {
+        console.warn("Missing explanation for id:", id);
+      }
+    });
+  });
+</script>
 </body>
 </html>
+
+
+
