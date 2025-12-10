@@ -83,4 +83,60 @@ const EXPLANATIONS = {
     <p>2. Exp 1.</p>
     <p>3. AExp 1.</p>
   `,
+
+  //Week3 Budget-Line-With-Complex-Pricing
+  "Budget-Line-With-Complex-Pricing": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+  //Week3 Consumers-Problem-Lecture-Example
+  "Consumers-Problem-Lecture-Example": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+   //Week3 Inferior-Good
+  "Inferior-Good": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+  //Week3 Perfect-Complements
+  "Perfect-Complements": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+   //Week3 Quasi-Linear-Optimization
+  "Quasi-Linear-Optimization": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+  //Week3 Revealed-Preference
+  "Revealed-Preference": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+  //Week3 Utility-Max-CES
+  "Utility-Max-CES": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+  //Week3 Sales-vs-Income-Tax
+  "Sales-vs-Income-Tax": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
 };
