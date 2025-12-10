@@ -55,4 +55,32 @@ const EXPLANATIONS = {
     <p>2. Exp 1.</p>
     <p>3. AExp 1.</p>
   `,
+
+  //Week2 Consumers-Problem
+  "Consumers-Problem": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+    //Week2 Indifference-curve
+  "Indifference-curve": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+   //Week2 Utility-Max
+  "Utility-Max": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+    //Week2 Discrete-Demand-Supply
+  "Discrete-Demand-Supply": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
 };
