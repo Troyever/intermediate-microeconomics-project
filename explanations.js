@@ -54,7 +54,7 @@ const EXPLANATIONS = {
   `,
 
   //Week1 Elasticity-Flexible-Demand
-  "Elasticity-Flexible-Demand": `
+  "Elasticity-Flexible-Demand": ` 
   <h3>Elasticity of two given points(Mid Point Approach)</h3>
    <p>$$E_P = \frac{\Delta Q / Q}{\Delta P / P} = \frac{\Delta Q_mid}{\Delta P_mid} \times \frac{P}{Q}$$
 </p>
@@ -124,9 +124,12 @@ const EXPLANATIONS = {
 
   //Week1 Elasticity
   "Elasticity": `
-   <p>1. Exp 1.</p>
+    <h3>Elasticity of two given points(Mid Point Approach)</h3>
+   <p>$$E_P = \frac{\Delta Q / Q}{\Delta P / P} = \frac{\Delta Q_mid}{\Delta P_mid} \times \frac{P}{Q}$$
+</p>
     <p>2. Exp 1.</p>
     <p>3. AExp 1.</p>
+   <h3>Elasticity at one point</h3>
   `,
 
   //Week2 Consumers-Problem
