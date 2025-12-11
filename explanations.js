@@ -92,10 +92,75 @@ const EXPLANATIONS = {
   
   //Week1 Market-interventions-revised
   "Market-interventions-revised": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
-  `,
+  <h3>Welfare</h3>
+  <p><strong>Consumer Surplus (CS):</strong> The area <u>below the demand curve</u> and <u>above the price consumers pay</u>. It measures buyers’ gain from paying less than their maximum willingness to pay.</p>
+  <p><strong>Producer Surplus (PS):</strong> The area <u>above the supply curve</u> and <u>below the price sellers receive</u>. It measures producers’ gain from receiving a price higher than their minimum willingness to sell.</p>
+  <p><strong>Government revenue or expenditure:</strong> 
+     - Revenue (e.g., tax) is shown as a rectangle between buyer and seller prices, multiplied by quantity traded.<br>
+     - Expenditure (e.g., subsidy) is the opposite: the government pays the rectangle.</p>
+  <p><strong>Deadweight Loss (DWL):</strong> The triangular area representing lost total surplus when quantity traded <u>moves away from competitive equilibrium</u>.</p>
+  
+  <h3>No intervention</h3>
+  <p>The market reaches its competitive equilibrium where supply meets demand. 
+     Consumer surplus and producer surplus are maximized, and <strong>there is no deadweight loss</strong>. 
+     This outcome is the benchmark against which all other policies are compared.</p>
+
+  <h3>Tax on producers</h3>
+  <p>A per-unit tax shifts the supply curve upward by the tax amount. 
+     Buyers face a higher price, sellers receive a lower price, and quantity falls.</p>
+  <p><strong>Welfare:</strong></p>
+  <ul>
+    <li>CS shrinks because buyers pay more.</li>
+    <li>PS shrinks because sellers receive less.</li>
+    <li>Government revenue is the rectangle between buyer and seller prices.</li>
+    <li><strong>DWL</strong> appears because the quantity traded is below the efficient level.</li>
+  </ul>
+
+  <h3>Subsidy on producers</h3>
+  <p>A per-unit subsidy shifts the supply curve downward. 
+     Buyers pay less, sellers receive more, and quantity increases beyond the competitive level.</p>
+  <p><strong>Welfare:</strong></p>
+  <ul>
+    <li>CS increases.</li>
+    <li>PS increases.</li>
+    <li>Government expenditure equals the subsidy per unit times the quantity traded.</li>
+    <li><strong>DWL</strong> arises because quantity exceeds the efficient competitive level.</li>
+  </ul>
+
+  <h3>Price floor</h3>
+  <p>A binding price floor sets a minimum price above equilibrium. 
+     Quantity supplied exceeds quantity demanded, creating a surplus.</p>
+  <p><strong>Welfare:</strong></p>
+  <ul>
+    <li>CS decreases because buyers face a higher price.</li>
+    <li>PS may increase for inframarginal sellers but overall total PS is limited to the quantity actually purchased.</li>
+    <li>Government may need to buy up the surplus (depends on policy design).</li>
+    <li><strong>DWL</strong> emerges because output is restricted to the smaller of Q_d and Q_s.</li>
+  </ul>
+
+  <h3>Production quota</h3>
+  <p>A quota restricts the maximum quantity that can be sold. 
+     If the quota is below equilibrium output, price rises and quantity falls.</p>
+  <p><strong>Welfare:</strong></p>
+  <ul>
+    <li>CS decreases because prices rise.</li>
+    <li>PS may increase for sellers who still operate (higher price), but the total PS area is smaller.</li>
+    <li>No government revenue or expenditure.</li>
+    <li><strong>DWL</strong> results from restricting output below the competitive level.</li>
+  </ul>
+
+  <h3>Voluntary reduction</h3>
+  <p>Firms voluntarily limit production or emissions, often in response to social pressure or industry agreements. 
+     Quantity supplied is reduced, raising the market price.</p>
+  <p><strong>Welfare:</strong></p>
+  <ul>
+    <li>CS decreases due to higher price.</li>
+    <li>PS depends: price increases benefit sellers, but reduced quantity limits total surplus.</li>
+    <li>No government revenue or expenditure.</li>
+    <li><strong>DWL</strong> arises because output is below the efficient competitive level.</li>
+  </ul>
+`;
+
 
   //Week1 Max
   "Max": `
@@ -130,12 +195,10 @@ const EXPLANATIONS = {
   "Elasticity": `
     <h3> definition </h3>
     <h3>Elasticity of two given points(Mid Point Approach)</h3>
-    <p>\\(E_d = \\frac{\\Delta Q_d}{\\Delta P_d}\\cdot\\frac{P_{d,mid}{Q_{d,mid}}\\)</p>
-    <p>Since Demand curve is downward sloping \\(E_d)\\ is always negative, sometimes, for simplicity purposes, we write absolute value.</p>
+    <p>\\(E_d = \\frac{\\Delta Q_d}{\\Delta P_d}\\cdot\\frac{P_{d,mid}}{{Q_{d,mid}}\\)</p>
+    <p>Since Demand curve is downward sloping \\(E_d\\) is always negative, sometimes, for simplicity purposes, we write absolute value.</p>
     <p>\\(E_s = \\frac{\\Delta Q_s}{\\Delta P_s}\\cdot\\frac{P_{s,mid}{Q_{s,mid}}\\)</p>
     <p>Opposite to \\(E_d\\),\\(E_s\\) is always positive.
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
    <h3>Elasticity at one point</h3>
    <p>    Point elasticity on the Demand/supply curve measures the responsiveness of quantity demanded/supplied to a 1% change in price at a point. </p>
    <p>\\(E_d=\\frac{dQ_d}{dP}\\cdot\\frac{P}{Q_d}\\)</p>
