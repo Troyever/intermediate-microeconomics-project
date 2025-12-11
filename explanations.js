@@ -55,9 +55,12 @@ const EXPLANATIONS = {
 
   //Week1 Elasticity-Flexible-Demand
   "Elasticity-Flexible-Demand": ` 
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
+  <p>Elasticity of demand is computed using the point elasticity formula:\\[E_d = \\frac{dQ}{dP} \\cdot \\frac{P}{Q}\\]</p>
+  <p>
+    Notice that elasticity of demand remains <b>constant</b> at all price level, it is because the Demand curve is a power function. 
+    In the example, \\(E_d = -2\\), meaning quantity demanded changes by 2% for every 1% increase in price.</p>
+`,
+
   `,
 
    //Week1 Elasticity-Staircase-Demand
