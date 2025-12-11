@@ -23,16 +23,22 @@ const EXPLANATIONS = {
 
    //Week1 Lectorial
   "Lectorial": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
+   <p>Suppose that you can hire a mechanic to work on your car for up to six hours to locate issues and adress them.</p>
+    <p>The total benefit of repair work is: B(H)=654H-40H<sup>2</sup></p>
+    <p>The total cost is C(H)=110H+40H<sup>2</sup></p>
+    <p>H refers to the number of hours. What is your best choice?</sup></p>
   `,
 
   //Week1 Ans
-  "LectorialAns": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
+  "Lectorialans": `
+   <p>Step 1: Compute the net benefit function.</p>
+   <p>Net Benefit: NB(H) = B(H) − C(H) = 544H − 80H<sup>2</sup></p>
+   <p>Step 2: Find the optimal number of hours by maximizing NB(H).</p>
+   <p>This requires setting the derivative of NB(H) equal to zero:</p>
+   <p>dNB/dH = 544 − 160H = 0</p>
+   <p>Step 3: Solve for H.</p>
+   <p>H = 3.4 hours</p>
+   <p>Since 3.4 hours is below the 6-hour limit, the mechanic should be hired for 3.4 hours.</p>
   `,
   
   //Week1 Market-interventions-revised
