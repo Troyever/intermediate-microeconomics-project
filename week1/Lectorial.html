@@ -9,7 +9,11 @@
    <!-- ================= NAVIGATION BAR ================= -->
   <link rel="stylesheet" href="../assets/site.css">
 <link rel="stylesheet" href="../assets/graph.css?v=1">
-  
+  <!--hide all answers-->
+  <button id="toggle-all-btn" class="toggle-section-btn" onclick="toggleAll()">
+  Answers
+</button>
+
 </head>
 <body>
   
@@ -21,14 +25,15 @@
     <!-- Page title -->
     <h1>Lectorial</h1>
 
-      <!-- 3. Textbox section -->
+      <!-- 1. Textbox section -->
     <section class="section">
       <h2>📘 Lectorial</h2>
      <div class="textbox" data-explain-id="Lectorial"></div>
     </section>
   </div>
 
-    <!-- 1. Desmos section -->
+  <div class="fold-target" id="graph-section">
+    <!-- 2. Desmos section -->
     <section class="section">
       <h2>📈 Interactive Graph</h2>
       <div class="graph-wrapper">
@@ -36,18 +41,16 @@
       </div>
     </section>
 
+    <div class="fold-target" id="answer-section">
     <!-- 3. Textbox section -->
    <section class="section">
   <h2>Suggested Answer</h2>
-  <button class="toggle-answer-btn" onclick="toggleAnswer('LectorialAns')">
-    Click to show answer
-  </button>
-  <div id="LectorialAns-wrapper" class="answer-wrapper hidden">
     <div class="textbox" data-explain-id="LectorialAns"></div>
   </div>
 </section>
 
-    <!-- 2. Video section -->
+    <div class="fold-target" id="video-section">
+    <!-- 4. Video section -->
     <section class="section">
       <h2>🎥 Video</h2>
       <div class="video-frame">
@@ -80,5 +83,9 @@
     });
   });
 </script>
+
+      <!--Import Answer btton-->
+      <script src="../../assets/toggle-sections.js"></script>
+
 </body>
 </html>
