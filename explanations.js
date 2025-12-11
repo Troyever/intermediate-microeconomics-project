@@ -2,9 +2,37 @@
 const EXPLANATIONS = {
   // Week 1, 4 axis cost&benefit
   "4-axis-Cost-Benefit": `
-    <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
+     <h3>A. Cost/Benefit axis</h3>
+  <p>
+    The first panel compares total benefit <em>B(h)</em> and total cost <em>C(h)</em>. 
+    The vertical distance between the two curves is net benefit. 
+    At <em>h = 3.5</em>, this gap is largest, so it is our candidate optimal choice.
+  </p>
+  
+  <h3>B. Marginal Benefit / Marginal Cost axis</h3>
+  <p>
+    The second panel shows marginal benefit <em>MB(h) = dB(h)/dh</em> and marginal cost <em>MC(h) = dC(h)/dh</em>. 
+    MB(h) and MC(h) are derivatives of B(h) and C(h) (Graph A).
+    The optimal choice occurs where <em>MB = MC</em>, the benefit of spending another hour is the same as the cost of it. 
+    Which happens at <em>h = 3.5</em>.
+  </p>
+  
+  <h3>C. Net Benefit axis</h3>
+  <p>
+    The third panel plots net benefit <em>NB(h)</em> maps out the gap between B(h) and C(h) in graph A. 
+    The best choice is where this curve reaches its maximum. 
+    At that point the slope of net benefit is zero, so 
+    <em>M<sub>NB</sub>(h) = dNB(h)/dh = 0</em> at <em>h = 3.5</em>.
+  </p>
+  
+  <h3>D. Marginal Net Benefit axis</h3>
+  <p>
+    The last panel shows marginal net benefit, which is the derivative of NB (Graph C.) 
+    <em>M<sub>NB</sub>(h) = MB − MC</em>. 
+    The optimum is where this curve crosses zero. 
+    At <em>h = 3.5</em>, marginal net benefit equals zero, which is equivalent to 
+    choosing the point where marginal benefit equals marginal cost and net benefit is maximized.
+  </p>
   `,
 
   //Week1 Elasticity-Flexible-Demand
