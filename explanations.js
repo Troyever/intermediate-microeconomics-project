@@ -1,19 +1,19 @@
-// Load MathJax
+// Load MathJax (robust version)
 (function loadMathJax() {
-  // Prevent duplicate loading
   if (window.mathjaxLoaded) return;
   window.mathjaxLoaded = true;
 
-  // Load polyfill
-  const poly = document.createElement("script");
-  poly.src = "https://polyfill.io/v3/polyfill.min.js?features=es6";
-  document.head.appendChild(poly);
-
-  // Load MathJax
+  // Load MathJax directly — no need for polyfill!
   const mj = document.createElement("script");
   mj.id = "MathJax-script";
-  mj.async = true;
   mj.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js";
+  mj.async = true;
+
+  mj.onerror = () => {
+    console.error("MathJax failed to load — retrying...");
+    setTimeout(loadMathJax, 1000);
+  };
+
   document.head.appendChild(mj);
 })();
 
