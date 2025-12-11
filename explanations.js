@@ -357,28 +357,23 @@ const POLICY_EXPLANATIONS = {
   }
 };
 
-function setPolicyExplanationFromSlider(value) {
-  const entry = POLICY_EXPLANATIONS[value];
-  const box   = document.getElementById("policy-exp");
-  const nameEl = document.getElementById("policy-name");
-  if (!entry || !box) return;
+// -----------------
+// Button → load explanation
+// -----------------
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("policy-buttons");
+  const expBox = document.getElementById("policy-exp");
 
-  box.innerHTML = entry.html;
-  if (nameEl) nameEl.textContent = entry.name;
+  if (!container || !expBox) return;
 
-  if (window.MathJax && MathJax.typesetPromise) {
-    MathJax.typesetPromise();
-  }
-}
-document.addEventListener("DOMContentLoaded", function () {
-  const slider = document.getElementById("policy-slider");
-  if (!slider) return;
+  container.addEventListener("click", (e) => {
+    const id = e.target.getAttribute("data-policy");
+    if (!id) return;
 
-  const initValue = Number(slider.value) || 1;
-  setPolicyExplanationFromSlider(initValue);
-
-  slider.addEventListener("input", function (e) {
-    const v = Number(e.target.value);
-    setPolicyExplanationFromSlider(v);
+    expBox.innerHTML = POLICY_EXPLANATIONS[id].html;
   });
+
+  // Default load (policy 1)
+  expBox.innerHTML = POLICY_EXPLANATIONS[1].html;
 });
+
