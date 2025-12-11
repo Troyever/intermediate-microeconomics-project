@@ -80,7 +80,7 @@ const EXPLANATIONS = {
     <p>The total benefit of repair work is: \\(B(H)=654H-40H^2\\); The total cost is \\(C(H)=110H+40H^2\\)</p>
     <p>H refers to the number of hours. What is your best choice?</sup></p>
   `,
-
+  
   //Week1 Ans
   "Lectorialans": `
    <p>1. Compute the net benefit function: \\(NB(H) = B(H) − C(H) = 544H − 80H^2\\)</p>
@@ -90,78 +90,6 @@ const EXPLANATIONS = {
    <p>Since 3.4 hours is below the 6-hour limit, the mechanic should be hired for 3.4 hours.</p>
   `,
   
-  //Week1 Market-interventions-revised
-  "Market-interventions-revised": `
-  <h3>Welfare</h3>
-  <p><strong>Consumer Surplus (CS):</strong> The area <u>below the demand curve</u> and <u>above the price consumers pay</u>. It measures buyers’ gain from paying less than their maximum willingness to pay.</p>
-  <p><strong>Producer Surplus (PS):</strong> The area <u>above the supply curve</u> and <u>below the price sellers receive</u>. It measures producers’ gain from receiving a price higher than their minimum willingness to sell.</p>
-  <p><strong>Government revenue or expenditure:</strong> 
-     - Revenue (e.g., tax) is shown as a rectangle between buyer and seller prices, multiplied by quantity traded.<br>
-     - Expenditure (e.g., subsidy) is the opposite: the government pays the rectangle.</p>
-  <p><strong>Deadweight Loss (DWL):</strong> The triangular area representing lost total surplus when quantity traded <u>moves away from competitive equilibrium</u>.</p>
-  
-  <h3>No intervention</h3>
-  <p>The market reaches its competitive equilibrium where supply meets demand. 
-     Consumer surplus and producer surplus are maximized, and <strong>there is no deadweight loss</strong>. 
-     This outcome is the benchmark against which all other policies are compared.</p>
-
-  <h3>Tax on producers</h3>
-  <p>A per-unit tax shifts the supply curve upward by the tax amount. 
-     Buyers face a higher price, sellers receive a lower price, and quantity falls.</p>
-  <p><strong>Welfare:</strong></p>
-  <ul>
-    <li>CS shrinks because buyers pay more.</li>
-    <li>PS shrinks because sellers receive less.</li>
-    <li>Government revenue is the rectangle between buyer and seller prices.</li>
-    <li><strong>DWL</strong> appears because the quantity traded is below the efficient level.</li>
-  </ul>
-
-  <h3>Subsidy on producers</h3>
-  <p>A per-unit subsidy shifts the supply curve downward. 
-     Buyers pay less, sellers receive more, and quantity increases beyond the competitive level.</p>
-  <p><strong>Welfare:</strong></p>
-  <ul>
-    <li>CS increases.</li>
-    <li>PS increases.</li>
-    <li>Government expenditure equals the subsidy per unit times the quantity traded.</li>
-    <li><strong>DWL</strong> arises because quantity exceeds the efficient competitive level.</li>
-  </ul>
-
-  <h3>Price floor</h3>
-  <p>A binding price floor sets a minimum price above equilibrium. 
-     Quantity supplied exceeds quantity demanded, creating a surplus.</p>
-  <p><strong>Welfare:</strong></p>
-  <ul>
-    <li>CS decreases because buyers face a higher price.</li>
-    <li>PS may increase for inframarginal sellers but overall total PS is limited to the quantity actually purchased.</li>
-    <li>Government may need to buy up the surplus (depends on policy design).</li>
-    <li><strong>DWL</strong> emerges because output is restricted to the smaller of Q_d and Q_s.</li>
-  </ul>
-
-  <h3>Production quota</h3>
-  <p>A quota restricts the maximum quantity that can be sold. 
-     If the quota is below equilibrium output, price rises and quantity falls.</p>
-  <p><strong>Welfare:</strong></p>
-  <ul>
-    <li>CS decreases because prices rise.</li>
-    <li>PS may increase for sellers who still operate (higher price), but the total PS area is smaller.</li>
-    <li>No government revenue or expenditure.</li>
-    <li><strong>DWL</strong> results from restricting output below the competitive level.</li>
-  </ul>
-
-  <h3>Voluntary reduction</h3>
-  <p>Firms voluntarily limit production or emissions, often in response to social pressure or industry agreements. 
-     Quantity supplied is reduced, raising the market price.</p>
-  <p><strong>Welfare:</strong></p>
-  <ul>
-    <li>CS decreases due to higher price.</li>
-    <li>PS depends: price increases benefit sellers, but reduced quantity limits total surplus.</li>
-    <li>No government revenue or expenditure.</li>
-    <li><strong>DWL</strong> arises because output is below the efficient competitive level.</li>
-  </ul>
-`,
-
-
   //Week1 Max
   "Max": `
    <p>The financial harm caused by evasion: \\(H(I)=\\frac{32}{(I+1)}\\), Cost of Inspections: \\(C(I)=2I\\)</p>
@@ -359,3 +287,99 @@ const EXPLANATIONS = {
     <p>3. AExp 1.</p>
   `,
 };
+
+
+//slider
+// Week1 market Interventions revised
+const POLICY_EXPLANATIONS = {
+  1: {
+    name: "No intervention",
+   html: `
+  html: `
+  <p><b>No intervention:</b> The market clears at the competitive equilibrium.<br>
+  CS is the area under demand and above the equilibrium price;<br>
+  PS is the area above supply and below the equilibrium price.<br>
+  There is no deadweight loss.</p>
+`
+  },
+  2: {
+    name: "Tax on producers",
+    html: `
+      <p><b>Tax on producers:</b> A per-unit tax raises the price buyers pay and lowers
+      the price sellers receive, so quantity falls. CS and PS both shrink. 
+      Government revenue is the tax per unit times the traded quantity, shown as a rectangle 
+      between buyer and seller prices. DWL is the triangle between the old and new quantities.</p>
+    `
+  },
+  3: {
+    name: "Subsidy on producers",
+    html: `
+      <p><b>Subsidy on producers:</b> A per-unit subsidy lowers the effective cost of supplying.
+      Buyers pay less, sellers receive more, and quantity rises above the competitive level.
+      CS and PS both increase, but the government pays the subsidy rectangle. 
+      DWL comes from overproduction relative to the efficient quantity.</p>
+    `
+  },
+  4: {
+    name: "Price floor",
+    html: `
+      <p><b>Price floor:</b> A binding floor sets a minimum price above equilibrium.
+      Quantity supplied exceeds quantity demanded, so only the smaller quantity is traded.
+      CS falls, PS may rise for inframarginal sellers, and a DWL triangle appears because 
+      output is below the efficient level.</p>
+    `
+  },
+  5: {
+    name: "Price support",
+    html: `
+      <p><b>Price support:</b> The government guarantees a high price and buys any excess supply.
+      Consumers pay the support price, producers sell more (to consumers and to the government), 
+      and government expenditure is the support price times the surplus quantity. 
+      DWL arises from overproduction.</p>
+    `
+  },
+  6: {
+    name: "Production quota",
+    html: `
+      <p><b>Production quota:</b> A quota caps the maximum quantity that can be sold.
+      When the quota is below the competitive quantity, price rises and traded quantity falls.
+      CS falls, PS is smaller overall, there is no government revenue, and DWL reflects the 
+      lost trades between quota quantity and the competitive quantity.</p>
+    `
+  },
+  7: {
+    name: "Voluntary reduction",
+    html: `
+      <p><b>Voluntary reduction:</b> Firms voluntarily restrict output (for example due to 
+      agreements or social pressure). Quantity traded falls below the competitive level,
+      price rises, CS falls, and PS is ambiguous. There is no direct government spending,
+      but DWL appears because fewer mutually beneficial trades occur.</p>
+    `
+  }
+};
+
+function setPolicyExplanationFromSlider(value) {
+  const entry = POLICY_EXPLANATIONS[value];
+  const box   = document.getElementById("policy-exp");
+  const nameEl = document.getElementById("policy-name");
+  if (!entry || !box) return;
+
+  box.innerHTML = entry.html;
+  if (nameEl) nameEl.textContent = entry.name;
+
+  if (window.MathJax && MathJax.typesetPromise) {
+    MathJax.typesetPromise();
+  }
+}
+document.addEventListener("DOMContentLoaded", function () {
+  const slider = document.getElementById("policy-slider");
+  if (!slider) return;
+
+  const initValue = Number(slider.value) || 1;
+  setPolicyExplanationFromSlider(initValue);
+
+  slider.addEventListener("input", function (e) {
+    const v = Number(e.target.value);
+    setPolicyExplanationFromSlider(v);
+  });
+});
