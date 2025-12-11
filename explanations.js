@@ -63,10 +63,16 @@ const EXPLANATIONS = {
 
    //Week1 Elasticity-Staircase-Demand
   "Elasticity-Staircase-Demand": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
-  `,
+  <p>This graph shows a staircase (step) demand curve, where quantity changes only at discrete price levels. Because the curve is piecewise vertical and 
+    horizontal, elasticity behaves very differently from smooth demand curves.
+  </p>
+
+  <p><b>Vertical segments:</b></p>
+  <p>When the curve is vertical except at \\(Q = 0\\), quantity does not react to price changes, thus, the elasticity of demand is 0.</p>
+
+  <p><b>Horizontal segments:</b></p>
+  <p>On horizontal steps, price does not change (\\( dP = 0 \\)), the percentage change in price is zero, so demand elasticity is undefined.</p>
+`,
 
    //Week1 Lectorial
   "Lectorial": `
