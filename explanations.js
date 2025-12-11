@@ -24,8 +24,7 @@ const EXPLANATIONS = {
    //Week1 Lectorial
   "Lectorial": `
    <p>Suppose that you can hire a mechanic to work on your car for up to six hours to locate issues and adress them.</p>
-    <p>The total benefit of repair work is: B(H)=654H-40H<sup>2</sup></p>
-    <p>The total cost is C(H)=110H+40H<sup>2</sup></p>
+    <p>The total benefit of repair work is: B(H)=654H-40H<sup>2</sup>; The total cost is C(H)=110H+40H<sup>2</sup></p>
     <p>H refers to the number of hours. What is your best choice?</sup></p>
   `,
 
