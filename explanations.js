@@ -1,9 +1,8 @@
-// Load MathJax (robust version)
+// Load MathJax
 (function loadMathJax() {
   if (window.mathjaxLoaded) return;
   window.mathjaxLoaded = true;
 
-  // Load MathJax directly — no need for polyfill!
   const mj = document.createElement("script");
   mj.id = "MathJax-script";
   mj.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js";
