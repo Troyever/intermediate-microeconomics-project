@@ -41,23 +41,24 @@
     </section>
 
     <!-- 3. Textbox section -->
- <!-- 3. Textbox section -->
 <section class="section">
   <h2>📘 Market interventions revised</h2>
 
-  <!-- Policy-specific explanations with slider -->
-  <h3>Policy-specific explanations</h3>
-  <div class="policy-controls">
-    <label for="policy-slider">Policy type:</label>
-    <input id="policy-slider" type="range" min="1" max="7" step="1" value="1">
-    <div class="policy-label">
-      Current policy: <span id="policy-name"></span>
-    </div>
+  <h3>Policy explanations</h3>
+
+  <div id="policy-buttons">
+    <button data-policy="1">No intervention</button>
+    <button data-policy="2">Tax on producers</button>
+    <button data-policy="3">Subsidy on producers</button>
+    <button data-policy="4">Price floor</button>
+    <button data-policy="5">Price support</button>
+    <button data-policy="6">Production quota</button>
+    <button data-policy="7">Voluntary reduction</button>
   </div>
 
   <div id="policy-exp" class="textbox"></div>
 </section>
-</div>
+
 
   <!--Desmos-->
 <script src="../assets/desmos-loader.js"></script>
