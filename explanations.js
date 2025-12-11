@@ -62,7 +62,7 @@ const EXPLANATIONS = {
 
   //Week1 Quiz
   "W1Quiz": `
-   <p>f(x,y)=x<sup>&alpha</sup>y<sup>&beta</sup>,g(x)=5ln(x)</p>
+   <p>f(x,y)=x<sup>&alpha;</sup>y<sup>&beta;</sup>,g(x)=5ln(x)</p>
     <p>1. Calculate: df/dx and df/dy when x=2,y=2</p>
     <p>2. Calculate: dg(x)/dx when x=10</p>
   `,
