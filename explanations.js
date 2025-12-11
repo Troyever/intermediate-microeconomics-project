@@ -31,13 +31,10 @@ const EXPLANATIONS = {
 
   //Week1 Ans
   "Lectorialans": `
-   <p>Step 1: Compute the net benefit function.</p>
-   <p>Net Benefit: NB(H) = B(H) − C(H) = 544H − 80H<sup>2</sup></p>
-   <p>Step 2: Find the optimal number of hours by maximizing NB(H).</p>
-   <p>This requires setting the derivative of NB(H) equal to zero:</p>
-   <p>dNB/dH = 544 − 160H = 0</p>
-   <p>Step 3: Solve for H.</p>
-   <p>H = 3.4 hours</p>
+   <p>1. Compute the net benefit function: NB(H) = B(H) − C(H) = 544H − 80H<sup>2</sup></p>
+   <p>2. Find the optimal number of hours by maximizing NB(H).This requires setting the derivative of NB(H) equal to zero:</p>
+   <p>&nbsp;&nbsp;&nbsp;dNB/dH = 544 − 160H = 0</p>
+   <p>3. Solve for H -> H = 3.4 hours</p>
    <p>Since 3.4 hours is below the 6-hour limit, the mechanic should be hired for 3.4 hours.</p>
   `,
   
