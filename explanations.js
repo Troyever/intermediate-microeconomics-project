@@ -61,8 +61,6 @@ const EXPLANATIONS = {
     In the example, \\(E_d = -2\\), meaning quantity demanded changes by 2% for every 1% increase in price.</p>
 `,
 
-  `,
-
    //Week1 Elasticity-Staircase-Demand
   "Elasticity-Staircase-Demand": `
    <p>1. Exp 1.</p>
