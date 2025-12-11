@@ -55,12 +55,9 @@ const EXPLANATIONS = {
 
   //Week1 Elasticity-Flexible-Demand
   "Elasticity-Flexible-Demand": ` 
-  <h3>Elasticity of two given points(Mid Point Approach)</h3>
-   <p>$E_P = \frac{\Delta Q / Q}{\Delta P / P} = \frac{\Delta Q_mid}{\Delta P_mid} \times \frac{P}{Q}$
-</p>
+   <p>1. Exp 1.</p>
     <p>2. Exp 1.</p>
     <p>3. AExp 1.</p>
-   <h3>Elasticity at one point</h3>
   `,
 
    //Week1 Elasticity-Staircase-Demand
@@ -95,7 +92,7 @@ const EXPLANATIONS = {
 
   //Week1 Max
   "Max": `
-   <p>The financial harm caused by evasion: $H(I)=\frac{32}{(I+1)}$, Cost of Inspections: $C(I)=2I$</p>
+   <p>The financial harm caused by evasion: $H(I)=\\frac{32}{(I+1)}$, Cost of Inspections: $C(I)=2I$</p>
     <p>I refers to the number of inspections per route per day</p>
     <p>Define the total loss to PTV from fare evasion as $L(I)=H(I)+C(I)$.</p>
     <p>Solve for the optimal number of inspections $I^\*$ per route per day. Show $MB(I^\*)=MC(I^\*)$</p>
@@ -103,8 +100,8 @@ const EXPLANATIONS = {
 
   //Week1 Maxans
   "Maxans": `
-  <p>Differentiate L(I): $\frac{dL}{dI} =\frac{-32}{(I+1)^2}+ 2$</p>
-  <p>Set the derivative equal to zero:$\frac{-32}{(I+1)^2} + 2 = 0\;\;\Longrightarrow\;\; (I+1)^2 = 16 \;\;\Longrightarrow\;\; I = 3$</p>
+  <p>Differentiate L(I): $\\frac{dL}{dI} =\\frac{-32}{(I+1)^2}+ 2$</p>
+  <p>Set the derivative equal to zero:$\\frac{-32}{(I+1)^2} + 2 = 0\;\;\Longrightarrow\;\; (I+1)^2 = 16 \;\;\Longrightarrow\;\; I = 3$</p>
   <p>Thus the optimal number of inspections is $I^\* = 3$ per route per day.</p>
   <p>At this point $MB(I^\*) = MC(I^\*) = 2$ </p>
 `,
