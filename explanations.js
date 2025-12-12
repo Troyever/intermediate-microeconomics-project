@@ -286,11 +286,39 @@ const EXPLANATIONS = {
     <p>2. Exp 1.</p>
     <p>3. AExp 1.</p>
   `,
+
+   //Week5 Edgeworth-Box
+  "Edgeworth-Box": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+  //Week5 Contract Curve
+  "Contract-Curve": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+   //Week5 Contract Curve
+  "Contract-Curve-Complements": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+   //Week5   Weird-Edgeworth-Box
+  "Weird-Edgeworth-Box": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
 };
 
 
-//slider
-// Week1 market Interventions revised
+//slider for Week 1 market intervention revised
 const POLICY_EXPLANATIONS = {
   1: {
     name: "No intervention",
