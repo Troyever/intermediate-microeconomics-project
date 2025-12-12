@@ -19,33 +19,47 @@
 
   <div class="container">
     <!-- Page title -->
-    <h1>Supply & Demand from Edgeworth</h1> <!--Change the title here-->
+<h1>Supply Demand From Edgewort</h1> <!--Change Page title-->
 
-    <!-- 1. Desmos section -->
+    <!-- 1. Question section -->
     <section class="section">
-      <h2>📈 Interactive Graph</h2>  <!--Change section title here-->
+      <h2>📘 Supply Demand From Edgewort</h2> <!--Change section title-->
+<div class="textbox" data-explain-id="4-axis-Cost-Benefit"></div>
+<!--hide all answers-->
+    <button id="toggle-all-btn" class="toggle-section-btn" onclick="toggleAll()">
+    Answers
+  </button>
+    </section>
+  </div>
+
+<div class="fold-target" id="graph-section">
+    <!-- 2. Desmos section -->
+    <section class="section">
+      <h2>📈 Interactive Graph</h2> <!--Change section title-->
       <div class="graph-wrapper">
         <div id="calculator"></div>
       </div>
     </section>
 
-    <!-- 2. Video section -->
+  <div class="fold-target" id="answer-section">
+    <!-- 3. Textbox section -->
+   <section class="section">
+  <h2>Suggested Answer</h2><!--Change section title-->
+    <div class="textbox" data-explain-id="LectorialAns"></div>
+  </div>
+</section>
+
+  <div class="fold-target" id="video-section">   
+ <!-- 4. Video section -->
     <section class="section">
-      <h2>🎥 Video</h2>
+      <h2>🎥 Video</h2><!--Change section title-->
       <div class="video-frame">
         <iframe
           src="https://www.youtube.com/embed/dQw4w9WgXcQ"
           allowfullscreen
-        ></iframe> <!--Upload the video link here-->
+        ></iframe><!--upload video link-->
       </div>
     </section>
-
-    <!-- 3. Textbox section -->
-    <section class="section">
-      <h2>📘Supply & Demand from Edgeworth</h2> <!--Change the explanation title-->
-<div class="textbox" data-explain-id="Supply-Demand-From-Edgeworth"></div> <!--ID must match with the id in "explanations.js"-->
-    </section>
-  </div>
 
 <!--Desmos-->
 <script src="../assets/desmos-loader.js"></script>
@@ -69,5 +83,8 @@
     });
   });
 </script>
+<!--Import Answer btton-->
+      <script src="../assets/answer.js"></script>
 </body>
 </html>
+
