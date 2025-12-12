@@ -301,19 +301,34 @@ const EXPLANATIONS = {
     <p>3. AExp 1.</p>
   `,
 
-   //Week5 Contract Curve
+   //Week5 Contract Curve Complements
   "Contract-Curve-Complements": `
    <p>1. Exp 1.</p>
     <p>2. Exp 1.</p>
     <p>3. AExp 1.</p>
   `,
 
-   //Week5   Weird-Edgeworth-Box
+   //Week5 Weird-Edgeworth-Box
   "Weird-Edgeworth-Box": `
    <p>1. Exp 1.</p>
     <p>2. Exp 1.</p>
     <p>3. AExp 1.</p>
   `,
+
+   //Week5 Supply-Demand-From-Edgeworth
+  "Supply-Demand-From-Edgeworth": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+  //Week5 Edgeworth-Box-3D
+  "Edgeworth-Box-3D": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
 
 };
 
