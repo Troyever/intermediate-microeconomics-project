@@ -499,8 +499,7 @@
       {
         "type": "folder",
         "id": "1376",
-        "title": "Bids and ask for variable sample size (with randomizer)",
-        "collapsed": true
+        "title": "Bids and ask for variable sample size (with randomizer)"
       },
       {
         "type": "expression",
@@ -580,11 +579,24 @@
         "latex": "P_{bidSortedAcending}=\\operatorname{sort}\\left(P_{bidNotSorted}\\right)"
       },
       {
+        "type": "text",
+        "id": "1667",
+        "folderId": "1376",
+        "text": "length of bid can be changed"
+      },
+      {
+        "type": "expression",
+        "id": "1665",
+        "folderId": "1376",
+        "color": "#2d70b3",
+        "latex": "n_{bid}=83"
+      },
+      {
         "type": "expression",
         "id": "1390",
         "folderId": "1376",
         "color": "#2d70b3",
-        "latex": "P_{bidR}=P_{bidSortedAcending}\\left[83...\\left(83-k+1\\right)\\right]"
+        "latex": "P_{bidR}=P_{bidSortedAcending}\\left[n_{bid}...\\left(n_{bid}-k+1\\right)\\right]"
       },
       {
         "type": "expression",
