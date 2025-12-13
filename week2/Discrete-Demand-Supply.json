@@ -519,7 +519,7 @@
         "id": "1519",
         "folderId": "1376",
         "color": "#000000",
-        "latex": "k=83",
+        "latex": "i_{d}=83",
         "hidden": true,
         "slider": {
           "hardMin": true,
@@ -596,7 +596,7 @@
         "id": "1390",
         "folderId": "1376",
         "color": "#2d70b3",
-        "latex": "P_{bidR}=P_{bidSortedAcending}\\left[n_{bid}...\\left(n_{bid}-k+1\\right)\\right]"
+        "latex": "P_{bidR}=P_{bidSortedAcending}\\left[n_{bid}...\\left(n_{bid}-i_{d}+1\\right)\\right]"
       },
       {
         "type": "expression",
