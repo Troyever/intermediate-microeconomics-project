@@ -156,9 +156,10 @@ const EXPLANATIONS = {
 
    //Week2 Utility-Max
   "Utility-Max": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
+   <p>The purple surface is the utility function //(U=u(x_1,x_2)//)</p>
+    <p>The vertical axis measures utility, higher points represents higher utility. The other 2 axis are quantity of each good consumed.</p>
+    <p>Indifference curves on the base plane are the projection of the surface at a certain utility level (height), each represents the same utility.</p>
+    <p>The area shaed in green represents all possible bundles the consumer can get within the budget.</p>
   `,
 
     //Week2 Discrete-Demand-Supply
