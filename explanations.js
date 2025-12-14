@@ -150,7 +150,7 @@ const EXPLANATIONS = {
     <p>At low quantities, the good may sill be valued and appear as a normal good, the upper part of the indifference curve convexes, behaves like a normal good. </p>
     <p>As \\(Q_{Soda}\\)  accumulates, \\(MU_{Soda}\\) approaches to zero, which implies consumer wants to avoid more soda.</p>
     <p>Different to normal good, \\(MRS\\) grows faster when \\(Q_{Soda}\\) is high. Indicating that indifference curve concaves.</p> 
-    <p>When consumer has 0 unit of pizza, he/she wants to give up infinite amount of Soda for a pizza \\(MRS=\\infinity\\).</p>
+    <p>When consumer has 0 unit of pizza, he/she wants to give up infinite amount of Soda for a pizza \\(MRS=\\infty\\).</p>
 
   `,
 
