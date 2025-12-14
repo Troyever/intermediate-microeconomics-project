@@ -156,9 +156,17 @@ const EXPLANATIONS = {
 
     //Week2 Discrete-Demand-Supply
   "Discrete-Demand-Supply": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
+  <p><b>Demand and Supply (folder at line 5, 14, 16, 24)</b></p>
+   <p>The Demand and supply curves are constructed directly from individual bids and asks from order books,see line 12 and line 23.</p>
+    <p>The Supply and Demand curves reflect discrete market participation rather than smooth theoretical functions.</p>
+    <p>By imposing a tax on the supply or demand side, the corresponding curve shifts upward or downward.The tax directly affects bidders’ and askers’ price expectations.</p>
+    <p></p>
+  <p><b>Bids and Ask for variable sample size</b></p>
+  <p>The parameter <i>n</i> controls the number of bids and asks included in Demand and Supply curve. Bids and Asks generated from a preset order book.</p>
+  <p>As <i>n</i> increases, the demand and supply curves become smoother and approaches to the theoretial continuous curves.</p>
+    <p></p>
+   <p><b>Bids and Ask for variable sample size (with randomized bids and asks)</b></p>
+  <p>Different from the previous graph, order books are generated randomly. Change \\(r_s\\) and \\(r_d\\), to generate a different list of bids and asks. </p>
   `,
 
   //Week3 Budget-Line-With-Complex-Pricing
