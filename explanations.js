@@ -473,12 +473,12 @@ const Utility_Types = {
   4: {
     name: "CES",
     html: `
-      <p><b>Constant Elasticity of Subsitution (CES) utility:</b>
-      <p>CES is a more general way of modelling substitutability. By changing \\(r_4\\) on line 83, relationship between two goods changes, approaching to different utility functions.</p>
-      <p>When \\(r_4\\) is a large negative number, the indifference curve approaches <i>Perfect Complements</i>, but it's still an <i> Imperfect Complements</i> indifference curve.</p>
-      <p>When \\(r_4\\) is 0, the indifference curve becomes <i>Cobb Douglas</i>.</p>
-      <p>When \\(r_4\\) is 1, the indifference curves becomes <i>Perfect Substitutes</i>.</p>
-      <p>When \\(r_4\\) is between 0 to 1, the indifference curves illustrates <i>Imperfect Substitutes</i>.</p>
+      <p><b>Constant Elasticity of Subsitution (CES) utility:</b></p>
+      <p>CES is a more general way of modelling substitutability. By changing r on line 83, relationship between two goods changes, approaching to different utility functions.</p>
+      <p>When r is a large negative number, the indifference curve approaches <i>Perfect Complements</i>, but it's still an <i> Imperfect Complements</i> indifference curve.</p>
+      <p>When r is 0, the indifference curve becomes <i>Cobb Douglas</i>.</p>
+      <p>When r is 1, the indifference curves becomes <i>Perfect Substitutes</i>.</p>
+      <p>When r is between 0 to 1, the indifference curves illustrates <i>Imperfect Substitutes</i>.</p>
     `
   },
   5: {
