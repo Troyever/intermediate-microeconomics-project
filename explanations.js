@@ -191,6 +191,13 @@ const EXPLANATIONS = {
     <p>3. AExp 1.</p>
   `,
 
+   //Week3 Consumers-Problem-Lecture-Exampleans
+  "Consumers-Problem-Lecture-Exampleans": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
    //Week3 Inferior-Good
   "Inferior-Good": `
    <p>1. Exp 1.</p>
@@ -247,6 +254,13 @@ const EXPLANATIONS = {
     <p>3. AExp 1.</p>
   `,
 
+   //Week4 Consumers-Problem-HWans
+  "Consumers-Problem-HWans": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
      //Week4 Curves&Demand
   "Curves&Demand": `
    <p>1. Exp 1.</p>
@@ -267,6 +281,14 @@ const EXPLANATIONS = {
     <p>2. Exp 1.</p>
     <p>3. AExp 1.</p>
   `,
+
+   //Week4 Ex-2023-Q3ans
+  "Ex-2023-Q3ans": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
 
      //Week4 IE-SE-CobbDouglas
   "IE-SE-CobbDouglas": `
