@@ -449,3 +449,80 @@ document.addEventListener("DOMContentLoaded", () => {
   expBox.innerHTML = POLICY_EXPLANATIONS[1].html;
 });
 
+//slider for Week 2 Consumer's problem
+const Utility_Types = {
+  1: {
+    name: "Cobb Douglas",
+   html: `
+  <p><b>No intervention:</b> The market clears at the competitive equilibrium.<br>
+  CS is the area under demand and above the equilibrium price;PS is the area above supply and below the equilibrium price.<br>
+  There is no deadweight loss.</p>
+`
+  },
+  2: {
+    name: "Quasi-linear",
+    html: `
+      <p><b>Tax on producers:</b> A per-unit tax raises the price buyers pay and lowers
+      the price sellers receive, so quantity falls. CS and PS both shrink. 
+      Government revenue is the tax per unit times the traded quantity, shown as a rectangle 
+      between buyer and seller prices. DWL is the triangle between the old and new quantities.</p>
+    `
+  },
+  3: {
+    name: "Power",
+    html: `
+      <p><b>Subsidy on producers:</b> A per-unit subsidy lowers the effective cost of supplying.
+      Buyers pay less, sellers receive more, and quantity rises above the competitive level.
+      CS and PS both increase, but the government pays the subsidy rectangle. 
+      DWL comes from overproduction relative to the efficient quantity.</p>
+    `
+  },
+  4: {
+    name: "CES",
+    html: `
+      <p><b>Price floor:</b> A binding floor sets a minimum price above equilibrium.
+      Quantity supplied exceeds quantity demanded, so only the smaller quantity is traded.
+      CS falls, PS may rise for inframarginal sellers, and a DWL triangle appears because 
+      output is below the efficient level.</p>
+    `
+  },
+  5: {
+    name: "Perfect Complements",
+    html: `
+      <p><b>Price support:</b> The government guarantees a high price and buys any excess supply.
+      Consumers pay the support price, producers sell more (to consumers and to the government), 
+      and government expenditure is the support price times the surplus quantity. 
+      DWL arises from overproduction.</p>
+    `
+  },
+  6: {
+    name: "Perfect Substitutes",
+    html: `
+      <p><b>Production quota:</b> A quota caps the maximum quantity that can be sold.
+      When the quota is below the competitive quantity, price rises and traded quantity falls.
+      CS falls, PS is smaller overall, there is no government revenue, and DWL reflects the 
+      lost trades between quota quantity and the competitive quantity.</p>
+    `
+  }
+};
+
+// -----------------
+// Button → load explanation
+// -----------------
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("W2-policy-buttons");
+  const expBox = document.getElementById("W2-policy-exp");
+
+  if (!container || !expBox) return;
+
+  container.addEventListener("click", (e) => {
+    const id = e.target.getAttribute("data-policy");
+    if (!id) return;
+
+    expBox.innerHTML = Utility_Types[id].html;
+  });
+
+  // Default load (policy 1)
+  expBox.innerHTML = Utility_Types[1].html;
+});
+
