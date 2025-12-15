@@ -203,17 +203,32 @@ const EXPLANATIONS = {
 
   //Week3 Consumers-Problem-Lecture-Example
   "Consumers-Problem-Lecture-Example": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
-  `,
+  <p>A consumer purchases two goods, x and y, with prices \\(p_x = 9\\) and \\(p_y = 12\\).</p>
+  <p>The consumer has an income of \\(69\\). Utility is given by \\(U(x,y) = x^{1/3} y\\).</p>
+  <p>Find the optimal consumption bundle \\((x^\*, y^\*)\\).</p>
+`,
 
    //Week3 Consumers-Problem-Lecture-Exampleans
   "Consumers-Problem-Lecture-Exampleans": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
-  `,
+  <p><b>Step 1: Compute marginal utilities</b></p>
+  <p>Utility function: \\(U(x,y)=x^{1/3}y\\).</p>
+  <p>\\(MU_x = \\frac{\\partial U}{\\partial x} = \\frac{1}{3}x^{-2/3}y\\),\\quad\\(MU_y = \\frac{\\partial U}{\\partial y} = x^{1/3}\\).</p>
+  <p></p>
+  <p><b>Step 2: Compute MRS</b></p>
+  <p>\\[MRS = \\frac{MU_x}{MU_y} = \\frac{\\frac{1}{3}x^{-2/3}y}{x^{1/3}} = \\frac{1}{3}\\frac{y}{x} \\]</p>
+  <p></p>
+  <p><b>Step 3: Optimality condition</b></p>
+  <p>At the optimum, \\(MRS = \\frac{p_x}{p_y} = \\frac{9}{12} = \\frac{3}{4}\\).</p>
+  <p>\\[\\frac{1}{3}\\frac{y}{x} = \\frac{3}{4}\\quad\\Longrightarrow\\quady = \\frac{9}{4}x\\]</p>
+  <p></p>
+  <p><b>Step 4: Budget constraint</b></p>
+  <p>\\[ 9x + 12y = 69\\]</p>
+  <p>Substitute \\(y = \\frac{9}{4}x\\):\\[9x + 12\\left(\\frac{9}{4}x\\right) = 69\\quad\\Longrightarrow\\quad36x = 69\\]</p>
+  <p></p>
+  <p><b>Step 5: Solve for optimal bundle</b></p>
+  <p>\\[x^* = \\frac{23}{12}, \\quady^* = \\frac{69}{16}\\]</p>
+`,
+
 
    //Week3 Inferior-Good
   "Inferior-Good": `
