@@ -241,30 +241,36 @@ const EXPLANATIONS = {
 
   //Week3 Perfect-Complements
   "Perfect-Complements": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
+   <p>Perfect complements imply that goods must be consumed in a fixed ratio.</p>
+   <p>For instance: a left shoe must be paired with a right shoe.</p>
+  <p>Gaining additional unit of one good without gaining the other good does not increase utility.</p>
   `,
 
    //Week3 Quasi-Linear-Optimization
   "Quasi-Linear-Optimization": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
+<p><b>Quasilinear Utility:</b></p>
+<p>Quasilinear preferences are linear in one good and non-linear in the other.</p>
+<p>The marginal utility of the linear good is constant.</p>
+<p>As a result, the optimal choice can be an interior solution or a corner solution.</p>
+<p>Corner solutions are common: the consumer may spend all remaining income on one good once the desired level of the non-linear good is reached.</p>
   `,
 
   //Week3 Revealed-Preference
   "Revealed-Preference": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
+   <p>Change \(T_4\) to see how revealed preference can be used to determine which bundles are strictly preferred to bundle C.</p>
+   <p><b>Principles used to compare bundles</b></p>
+   <p><b>More is better:</b> A bundle is strictly preferred if it contains more of at least one good and no less of the other.</p>
+   <p><b>Transitivity:</b> If the consumer prefers A to B and prefers B to C, then the consumer must prefer A to C.</p>
+   <p><b>Convexity:</b> With convex preferences, consumers prefer mixtures of goods to extreme bundles, which implies that averages of preferred bundles are also preferred.</p>
   `,
 
   //Week3 Utility-Max-CES
   "Utility-Max-CES": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
+    <p>CES is a more general way of modelling substitutability. By changing r on line 11, relationship between two goods changes, approaching to different utility functions.</p>
+    <p>When r is a large negative number, the indifference curve approaches <i>Perfect Complements</i>, but it's still an <i> Imperfect Complements</i> indifference curve.</p>
+    <p>When r is 0, the indifference curve becomes <i>Cobb Douglas</i>.</p>
+    <p>When r is 1, the indifference curves becomes <i>Perfect Substitutes</i>.</p>
+    <p>When r is between 0 to 1, the indifference curves illustrates <i>Imperfect Substitutes</i>.</p>
   `,
 
   //Week3 Sales-vs-Income-Tax
@@ -511,11 +517,11 @@ const Utility_Types = {
   2: {
     name: "Quasilinear Utility",
     html: `
-      <p><b>Quasilinear Utility:</b></p>
-      <p>Quasilinear preferences imply that utility is linear in one good and non linear in the other.</p> 
-      <p>the marginal utility for the linear good is constant.</p>
-      <p></p>
-      <p>The optmal choice may be a corner solution, consumer spends all income on one good.</p>
+     <p><b>Quasilinear Utility:</b></p>
+<p>Quasilinear preferences are linear in one good and non-linear in the other.</p>
+<p>The marginal utility of the linear good is constant.</p>
+<p>As a result, the optimal choice can be an interior solution or a corner solution.</p>
+<p>Corner solutions are common: the consumer may spend all remaining income on one good once the desired level of the non-linear good is reached.</p>
     `
   },
   3: {
