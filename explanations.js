@@ -266,11 +266,16 @@ const EXPLANATIONS = {
 
   //Week3 Utility-Max-CES
   "Utility-Max-CES": `
-    <p>CES is a more general way of modelling substitutability. By changing r on line 11, relationship between two goods changes, approaching to different utility functions.</p>
-    <p>When r is a large negative number, the indifference curve approaches <i>Perfect Complements</i>, but it's still an <i> Imperfect Complements</i> indifference curve.</p>
-    <p>When r is 0, the indifference curve becomes <i>Cobb Douglas</i>.</p>
-    <p>When r is 1, the indifference curves becomes <i>Perfect Substitutes</i>.</p>
-    <p>When r is between 0 to 1, the indifference curves illustrates <i>Imperfect Substitutes</i>.</p>
+  <p>CES utility provides a flexible way to model how easily two goods can substitute for each other. 
+  <p>Changing <i>r</i> (line 11) shifts the curvature of indifference curves smoothly across different preference types.</p>
+  <p><b>When r → −∞:</b> The indifference curve approaches that of <i>Perfect Complements</i> (L-shaped), though it remains an imperfect complement in the CES form.</p>
+  <p><b>When r = 0:</b> The curve becomes the familiar <i>Cobb–Douglas</i> case.</p>
+  <p><b>When r = 1:</b> The curve becomes linear, representing <i>Perfect Substitutes</i>.</p>
+  <p><b>When 0 &lt; r &lt; 1:</b> The curve shows <i>Imperfect Substitutes</i>—still convex, but flatter as substitutability increases.</p>
+  <p><b>CES and the optimal bundle:</b> For CES preferences, the optimal bundle is typically an interior solution where the marginal rate of substitution equals the price ratio.</p>
+  <p>As <i>r</i> increases, goods become more substitutable, making the optimal bundle more sensitive to relative prices.</p>
+`,
+
   `,
 
   //Week3 Sales-vs-Income-Tax
