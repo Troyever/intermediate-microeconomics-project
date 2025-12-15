@@ -4,15 +4,15 @@
   "graph": {
     "viewport": {
       "xmin": -10.954183243830034,
-      "ymin": 9.663834889673538,
+      "ymin": 14.905440159977504,
       "xmax": 48.60529611077533,
-      "ymax": 49.37015445941044
+      "ymax": 44.1285491891063
     },
     "__v12ViewportLatexStash": {
       "xmin": "-10.954183243830034",
       "xmax": "48.60529611077533",
-      "ymin": "9.663834889673538",
-      "ymax": "49.37015445941044"
+      "ymin": "14.905440159977504",
+      "ymax": "44.1285491891063"
     }
   },
   "expressions": {
@@ -91,7 +91,7 @@
         "id": "3",
         "folderId": "35",
         "color": "#388c46",
-        "latex": "I=50",
+        "latex": "I=51.3",
         "slider": {
           "hardMin": true,
           "hardMax": true,
@@ -189,8 +189,7 @@
       {
         "type": "folder",
         "id": "82",
-        "title": "optimal",
-        "collapsed": true
+        "title": "optimal"
       },
       {
         "type": "expression",
@@ -326,6 +325,28 @@
         "showLabel": true,
         "label": "optimal bundle (${a_2round},${b_2round})",
         "pointStyle": "CROSS"
+      },
+      {
+        "type": "folder",
+        "id": "87",
+        "title": "Answer",
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "88",
+        "folderId": "87",
+        "color": "#2d70b3",
+        "latex": "\\left(a_{1opt},b_{1opt}\\right)\\left\\{a_{1opt}<C\\right\\}\\left\\{U_{left}>U_{right}\\right\\}",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "89",
+        "folderId": "87",
+        "color": "#388c46",
+        "latex": "\\left(a_{2opt},b_{2opt}\\right)\\left\\{a_{1opt}\\ge C,U_{right}>U_{left}\\right\\}",
+        "hidden": true
       }
     ]
   },
