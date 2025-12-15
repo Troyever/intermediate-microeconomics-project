@@ -184,6 +184,13 @@ const EXPLANATIONS = {
     <p>3. AExp 1.</p>
   `,
 
+  //Week3 Budget-Line-With-Complex-Pricingans
+  "Budget-Line-With-Complex-Pricingans": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
   //Week3 Consumers-Problem-Lecture-Example
   "Consumers-Problem-Lecture-Example": `
    <p>1. Exp 1.</p>
