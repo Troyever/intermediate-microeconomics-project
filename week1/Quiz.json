@@ -4,15 +4,15 @@
   "graph": {
     "viewport": {
       "xmin": 3.648982471787932,
-      "ymin": 3.6353953160891104,
+      "ymin": 3.8143162154092933,
       "xmax": 4.406281334573238,
-      "ymax": 4.180114624935016
+      "ymax": 4.001193725614833
     },
     "__v12ViewportLatexStash": {
       "xmin": "3.648982471787932",
       "xmax": "4.406281334573238",
-      "ymin": "3.6353953160891104",
-      "ymax": "4.180114624935016"
+      "ymin": "3.8143162154092933",
+      "ymax": "4.001193725614833"
     }
   },
   "expressions": {
@@ -44,21 +44,9 @@
       },
       {
         "type": "expression",
-        "id": "737",
-        "color": "#2d70b3",
-        "latex": "f\\left(2,2\\right)"
-      },
-      {
-        "type": "expression",
         "id": "740",
         "color": "#6042a6",
         "latex": "f_{1}\\left(x,y\\right)=\\frac{d}{dx}f\\left(x,y\\right)"
-      },
-      {
-        "type": "expression",
-        "id": "743",
-        "color": "#2d70b3",
-        "latex": "f_{1}\\left(2,2\\right)"
       },
       {
         "type": "expression",
@@ -67,8 +55,29 @@
         "latex": "f_{2}\\left(x,y\\right)=\\frac{d}{dy}f\\left(x,y\\right)"
       },
       {
+        "type": "folder",
+        "id": "768",
+        "title": "Answer",
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "737",
+        "folderId": "768",
+        "color": "#2d70b3",
+        "latex": "f\\left(2,2\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "743",
+        "folderId": "768",
+        "color": "#2d70b3",
+        "latex": "f_{1}\\left(2,2\\right)"
+      },
+      {
         "type": "expression",
         "id": "744",
+        "folderId": "768",
         "color": "#388c46",
         "latex": "f_{2}\\left(2,2\\right)"
       },
@@ -94,11 +103,6 @@
         "id": "755",
         "color": "#2d70b3",
         "latex": "4x+5y=36"
-      },
-      {
-        "type": "expression",
-        "id": "754",
-        "color": "#c74440"
       },
       {
         "type": "text",
@@ -156,14 +160,22 @@
         "latex": "g'\\left(x\\right)=\\frac{d}{dx}g\\left(x\\right)"
       },
       {
+        "type": "folder",
+        "id": "769",
+        "title": "Answer",
+        "collapsed": true
+      },
+      {
         "type": "expression",
         "id": "764",
+        "folderId": "769",
         "color": "#c74440",
         "latex": "g\\left(10\\right)"
       },
       {
         "type": "expression",
         "id": "763",
+        "folderId": "769",
         "color": "#000000",
         "latex": "g'\\left(10\\right)"
       }
