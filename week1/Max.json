@@ -4,16 +4,16 @@
   "graph": {
     "viewport": {
       "xmin": -6.837796843459621,
-      "ymin": -2.1475837288613384,
+      "ymin": 9.584032408375382,
       "xmax": 42.817327812852206,
-      "ymax": 33.56896955363264
+      "ymax": 21.837353416395924
     },
     "showGrid": false,
     "__v12ViewportLatexStash": {
       "xmin": "-6.837796843459621",
       "xmax": "42.817327812852206",
-      "ymin": "-2.1475837288613384",
-      "ymax": "33.56896955363264"
+      "ymin": "9.584032408375382",
+      "ymax": "21.837353416395924"
     }
   },
   "expressions": {
@@ -115,14 +115,23 @@
         "text": "The optimal amount of inspections, after setting MB(I)=MC(I) and solving for I"
       },
       {
+        "type": "folder",
+        "id": "951",
+        "title": "Answer",
+        "hidden": true,
+        "collapsed": true
+      },
+      {
         "type": "expression",
         "id": "929",
+        "folderId": "951",
         "color": "#388c46",
         "latex": "I_{opt}=\\sqrt{\\frac{a}{b}}-1"
       },
       {
         "type": "expression",
         "id": "924",
+        "folderId": "951",
         "color": "#388c46",
         "latex": "\\left(I_{opt},L_{oss}\\left(I_{opt}\\right)\\right)",
         "pointStyle": "CROSS",
@@ -131,6 +140,7 @@
       {
         "type": "expression",
         "id": "927",
+        "folderId": "951",
         "color": "#000000",
         "latex": "\\left(I_{opt},N_{etBenefit}\\left(I_{opt}\\right)\\right)",
         "pointStyle": "CROSS",
@@ -139,6 +149,7 @@
       {
         "type": "expression",
         "id": "928",
+        "folderId": "951",
         "color": "#2d70b3",
         "latex": "\\left(I_{opt},M_{B}\\left(I_{opt}\\right)\\right)",
         "pointStyle": "CROSS",
@@ -147,6 +158,7 @@
       {
         "type": "expression",
         "id": "930",
+        "folderId": "951",
         "color": "#000000",
         "latex": "\\operatorname{polygon}\\left(\\left(I_{opt},N_{etBenefit}\\left(I_{opt}\\right)\\right),\\left(I_{opt},L_{oss}\\left(I_{opt}\\right)\\right)\\right)",
         "lineStyle": "DOTTED",
