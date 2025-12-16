@@ -6,7 +6,7 @@ const NAVBAR_HTML=`
 
   <div class="nav-menu">
     <div class="dropdown">
-      <span class="dropdown-btn">Concepts ▾</span>
+      <span class="dropdown-btn">Weekly Concepts ▾</span>
       <div class="dropdown-content">
         <a href="/intermediate-microeconomics-project/week1/concepts.html">Week 1</a>
         <a href="/intermediate-microeconomics-project/week2/concepts.html">Week 2</a>
@@ -41,6 +41,20 @@ const NAVBAR_HTML=`
         <a href="/intermediate-microeconomics-project/week12/exercise.html">Week 12</a>
       </div>
     </div>
+
+    <div class="nav-menu">
+    <div class="dropdown">
+      <span class="dropdown-btn">Concepts ▾</span>
+      <div class="dropdown-content">
+        <a href="/intermediate-microeconomics-project/Instructor-Page/Foundations-of-Consumer_Behavior.html">Market Equilibrium Welfare Supply & Demand</a>
+        <a href="/intermediate-microeconomics-project/Instructor-Page/Market-Equilibrium-Welfare-Supply-Demand.html">Market Equilibrium Welfare Supply & Demand</a>
+        <a href="/intermediate-microeconomics-project/Instructor-Page/Consumer-Choice-Extensions.html">Market Equilibrium Welfare Supply & Demand</a>
+        <a href="/intermediate-microeconomics-project/Instructor-Page/Production-Cost-Decision-Making.html">Market Equilibrium Welfare Supply & Demand</a>
+        <a href="/intermediate-microeconomics-project/Instructor-Page/Monopoly.html">Market Equilibrium Welfare Supply & Demand</a>
+        <a href="/intermediate-microeconomics-project/Instructor-Page/Oligopoly.html">Oligopoly</a>
+      </div>
+    </div>
+    
      <div class="nav-menu">
     <button id="export-desmos-btn" class="export-btn">
       Export graph
