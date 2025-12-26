@@ -286,3 +286,19 @@ body {
     padding-right: 40px;
 }
 
+/* 假设你的缩略图外面有个容器，比如 .thumb */
+.thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;   /* 你也可以改成 4/3 */
+  overflow: hidden;
+  border-radius: 12px;    /* 可选 */
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      
+  display: block;
+}
+
+
