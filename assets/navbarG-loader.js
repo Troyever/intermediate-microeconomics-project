@@ -8,18 +8,18 @@ const NAVBAR_HTML=`
     <div class="dropdown">
       <span class="dropdown-btn">Weeks ▾</span>
       <div class="dropdown-content">
-        <a href="/intermediate-microeconomics-project/week1/concepts.html">Concepts Week 1</a>
-        <a href="/intermediate-microeconomics-project/week2/concepts.html">Concepts Week 2</a>
-        <a href="/intermediate-microeconomics-project/week3/concepts.html">Concepts Week 3</a>
-        <a href="/intermediate-microeconomics-project/week4/concepts.html">Concepts Week 4</a>
-        <a href="/intermediate-microeconomics-project/week5/concepts.html">Concepts Week 5</a>
-        <a href="/intermediate-microeconomics-project/week6/concepts.html">Concepts Week 6</a>
-        <a href="/intermediate-microeconomics-project/week7/concepts.html">Concepts Week 7</a>
-        <a href="/intermediate-microeconomics-project/week8/concepts.html">Concepts Week 8</a>
-        <a href="/intermediate-microeconomics-project/week9/concepts.html">Concepts Week 9</a>
-        <a href="/intermediate-microeconomics-project/week10/concepts.html">Concepts Week 10</a>
-        <a href="/intermediate-microeconomics-project/week11/concepts.html">Concepts Week 11</a>
-        <a href="/intermediate-microeconomics-project/week12/concepts.html">Concepts Week 12</a>
+        <a href="/intermediate-microeconomics-project/week1/concepts.html">Concepts Wk1</a>
+        <a href="/intermediate-microeconomics-project/week2/concepts.html">Concepts Wk2</a>
+        <a href="/intermediate-microeconomics-project/week3/concepts.html">Concepts Wk3</a>
+        <a href="/intermediate-microeconomics-project/week4/concepts.html">Concepts Wk4</a>
+        <a href="/intermediate-microeconomics-project/week5/concepts.html">Concepts Wk5</a>
+        <a href="/intermediate-microeconomics-project/week6/concepts.html">Concepts Wk6</a>
+        <a href="/intermediate-microeconomics-project/week7/concepts.html">Concepts Wk7</a>
+        <a href="/intermediate-microeconomics-project/week8/concepts.html">Concepts Wk8</a>
+        <a href="/intermediate-microeconomics-project/week9/concepts.html">Concepts Wk9</a>
+        <a href="/intermediate-microeconomics-project/week10/concepts.html">Concepts Wk10</a>
+        <a href="/intermediate-microeconomics-project/week11/concepts.html">Concepts Wk11</a>
+        <a href="/intermediate-microeconomics-project/week12/concepts.html">Concepts Wk12</a>
         <!-- Add later -->
       </div>
     </div>
@@ -27,18 +27,18 @@ const NAVBAR_HTML=`
     <div class="dropdown">
       <span class="dropdown-btn">Exercises ▾</span>
       <div class="dropdown-content">
-        <a href="/intermediate-microeconomics-project/week1/exercise.html">Exercises Week 1</a>
-        <a href="/intermediate-microeconomics-project/week2/exercise.html">Exercises Week 2</a>
-        <a href="/intermediate-microeconomics-project/week3/exercise.html">Exercises Week 3</a>
-        <a href="/intermediate-microeconomics-project/week4/exercise.html">Exercises Week 4</a>
-        <a href="/intermediate-microeconomics-project/week5/exercise.html">Exercises Week 5</a>
-        <a href="/intermediate-microeconomics-project/week6/exercise.html">Exercises Week 6</a>
-        <a href="/intermediate-microeconomics-project/week7/exercise.html">Exercises Week 7</a>
-        <a href="/intermediate-microeconomics-project/week8/exercise.html">Exercises Week 8</a>
-        <a href="/intermediate-microeconomics-project/week9/exercise.html">Exercises Week 9</a>
-        <a href="/intermediate-microeconomics-project/week10/exercise.html">Exercises Week 10</a>
-        <a href="/intermediate-microeconomics-project/week11/exercise.html">Exercises Week 11</a>
-        <a href="/intermediate-microeconomics-project/week12/exercise.html">Exercises Week 12</a>
+        <a href="/intermediate-microeconomics-project/week1/exercise.html">Exercises Wk1</a>
+        <a href="/intermediate-microeconomics-project/week2/exercise.html">Exercises Wk2</a>
+        <a href="/intermediate-microeconomics-project/week3/exercise.html">Exercises Wk3</a>
+        <a href="/intermediate-microeconomics-project/week4/exercise.html">Exercises Wk4</a>
+        <a href="/intermediate-microeconomics-project/week5/exercise.html">Exercises Wk5</a>
+        <a href="/intermediate-microeconomics-project/week6/exercise.html">Exercises Wk6</a>
+        <a href="/intermediate-microeconomics-project/week7/exercise.html">Exercises Wk7</a>
+        <a href="/intermediate-microeconomics-project/week8/exercise.html">Exercises Wk8</a>
+        <a href="/intermediate-microeconomics-project/week9/exercise.html">Exercises Wk9</a>
+        <a href="/intermediate-microeconomics-project/week10/exercise.html">Exercises Wk10</a>
+        <a href="/intermediate-microeconomics-project/week11/exercise.html">Exercises Wk11</a>
+        <a href="/intermediate-microeconomics-project/week12/exercise.html">Exercises Wk12</a>
       </div>
     </div>
 
