@@ -3,18 +3,18 @@
   "randomSeed": "7986f85ff8ce52d7ea2d574e9bc4e1d2",
   "graph": {
     "viewport": {
-      "xmin": -25.96213969306993,
-      "ymin": -10.593863844219989,
-      "xmax": 113.21119545130506,
-      "ymax": 64.53827080955571
+      "xmin": -37.78716878604543,
+      "ymin": -11.591812354393983,
+      "xmax": 93.19949958513239,
+      "ymax": 35.151414060320676
     },
     "xAxisLabel": "Number of Flips",
     "yAxisLabel": "Expected Utility",
     "__v12ViewportLatexStash": {
-      "xmin": "-25.96213969306993",
-      "xmax": "113.21119545130506",
-      "ymin": "-10.593863844219989",
-      "ymax": "64.53827080955571"
+      "xmin": "-37.78716878604543",
+      "xmax": "93.19949958513239",
+      "ymin": "-11.591812354393983",
+      "ymax": "35.151414060320676"
     }
   },
   "expressions": {
@@ -26,33 +26,83 @@
       },
       {
         "type": "expression",
+        "id": "773",
+        "color": "#c74440",
+        "latex": "P_{r}\\left(k\\right)=\\frac{1}{2^{k}}",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "774",
+        "color": "#2d70b3",
+        "latex": "P_{rMoreThanM}\\left(M\\right)=\\left(1-\\sum_{n=1}^{M}\\frac{1}{2^{n}}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "775",
+        "color": "#388c46",
+        "latex": "P_{rMoreThanM}\\left(10\\right)"
+      },
+      {
+        "type": "text",
+        "id": "777",
+        "text": "SM= sum up to m"
+      },
+      {
+        "type": "text",
+        "id": "781",
+        "text": "(1/2)SM= sum from n= 2 to M+1"
+      },
+      {
+        "type": "text",
+        "id": "783",
+        "text": "SM-(1/2)SM=1/2-(1/2)^(M+1)"
+      },
+      {
+        "type": "text",
+        "id": "785",
+        "text": "1/2*SM=1/2-(1/2)^(M+1)"
+      },
+      {
+        "type": "text",
+        "id": "787",
+        "text": "SM=1-(1/2)^(M)"
+      },
+      {
+        "type": "text",
+        "id": "790",
+        "text": "1-SM=(1/2)^M"
+      },
+      {
+        "type": "text",
+        "id": "792",
+        "text": "M+2"
+      },
+      {
+        "type": "expression",
+        "id": "788",
+        "color": "#000000"
+      },
+      {
+        "type": "expression",
+        "id": "1",
+        "color": "#c74440",
+        "latex": "E_{U}\\left(M\\right)=\\sum_{n=1}^{M}P_{r}\\left(n\\right)\\cdot\\ln\\left(2^{n}\\right)+P_{rMoreThanM}\\left(M\\right)\\cdot\\ln\\left(2^{M+1}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "expression",
         "id": "5",
         "color": "#000000",
         "latex": "E_{V}\\left(M\\right)=\\sum_{n=1}^{M}\\frac{1}{2^{n}}\\cdot2^{n}+\\left(1-\\sum_{n=1}^{M}\\frac{1}{2^{n}}\\right)\\cdot2^{M+1}",
         "hidden": true
       },
       {
-        "type": "text",
-        "id": "111",
-        "text": "Even though high payoffs are extremely unlikely, their contribution to expected value does not vanish, because payoff growth exactly offsets probability decay."
-      },
-      {
-        "type": "expression",
-        "id": "1",
-        "color": "#c74440",
-        "latex": "E_{U}\\left(M\\right)=\\sum_{n=1}^{M}\\frac{1}{2^{n}}\\cdot\\ln\\left(2^{n}\\right)+\\left(1-\\sum_{n=1}^{M}\\frac{1}{2^{n}}\\right)\\ln\\left(2^{M+1}\\right)",
-        "hidden": true
-      },
-      {
-        "type": "text",
-        "id": "113",
-        "text": "Although payoffs grow rapidly at high numbers of flips, their impact on expected utility is negligible because low probability and diminishing marginal utility dominate."
-      },
-      {
         "type": "expression",
         "id": "2",
         "color": "#2d70b3",
-        "latex": "N=20",
+        "latex": "N=10",
         "hidden": true,
         "slider": {
           "hardMin": true,
@@ -105,15 +155,13 @@
         "latex": "p_{aboveEV}=1-\\sum_{n=1}^{\\operatorname{ceil}\\left(\\log_{2}\\left(E_{V}\\left(N\\right)\\right)\\right)-1}\\frac{1}{2^{n}}"
       },
       {
-        "type": "folder",
-        "id": "109",
-        "title": "Labels",
-        "collapsed": true
+        "type": "expression",
+        "id": "104",
+        "color": "#6042a6"
       },
       {
         "type": "expression",
         "id": "94",
-        "folderId": "109",
         "color": "#000000",
         "latex": "\\left(N,0\\right)",
         "showLabel": true,
@@ -124,7 +172,6 @@
       {
         "type": "expression",
         "id": "97",
-        "folderId": "109",
         "color": "#000000",
         "latex": "\\left(N,E_{V}\\left(N\\right)\\right)",
         "showLabel": true,
@@ -135,51 +182,36 @@
       {
         "type": "expression",
         "id": "95",
-        "folderId": "109",
         "color": "#000000",
-        "latex": "\\operatorname{polygon}\\left(\\left(N,E_{U}\\left(N\\right)\\right),\\left(N,E_{V}\\left(N\\right)\\ \\right)\\right)",
-        "lineStyle": "DASHED"
+        "latex": "\\operatorname{polygon}\\left(\\left(N,E_{U}\\left(N\\right)\\right),\\left(N,E_{V}\\left(N\\right)\\ \\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "96",
+        "color": "#388c46"
       },
       {
         "type": "expression",
         "id": "9",
-        "folderId": "109",
         "color": "#6042a6",
         "latex": "F=\\left[1...50\\right]"
       },
       {
         "type": "expression",
         "id": "7",
-        "folderId": "109",
         "color": "#2d70b3",
         "latex": "\\left(F,E_{V}\\left(F\\right)\\right)"
       },
       {
         "type": "expression",
         "id": "8",
-        "folderId": "109",
         "color": "#c74440",
         "latex": "\\left(F,E_{U}\\left(F\\right)\\right)"
       },
       {
         "type": "expression",
-        "id": "106",
-        "folderId": "109",
-        "color": "#c74440",
-        "latex": "\\left(40,E_{U}\\left(40\\right)\\right)",
-        "showLabel": true,
-        "label": "Expected Utility (Risk Averse)",
-        "labelOrientation": "above"
-      },
-      {
-        "type": "expression",
-        "id": "107",
-        "folderId": "109",
-        "color": "#2d70b3",
-        "latex": "\\left(40,E_{V}\\left(40\\right)\\right)",
-        "showLabel": true,
-        "label": "Expected value (Risk Neutral)",
-        "labelOrientation": "above"
+        "id": "4",
+        "color": "#6042a6"
       }
     ]
   },
