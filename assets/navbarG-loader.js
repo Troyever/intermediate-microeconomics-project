@@ -6,7 +6,7 @@ const NAVBAR_HTML=`
 
   <div class="nav-menu">
     <div class="dropdown">
-      <span class="dropdown-btn">Weekly Concepts ▾</span>
+      <span class="dropdown-btn">Weeks ▾</span>
       <div class="dropdown-content">
         <a href="/intermediate-microeconomics-project/week1/concepts.html">Week 1</a>
         <a href="/intermediate-microeconomics-project/week2/concepts.html">Week 2</a>
