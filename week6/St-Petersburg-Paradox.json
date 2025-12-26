@@ -1,1 +1,188 @@
-
+{
+  "version": 11,
+  "randomSeed": "7986f85ff8ce52d7ea2d574e9bc4e1d2",
+  "graph": {
+    "viewport": {
+      "xmin": -25.96213969306993,
+      "ymin": -10.593863844219989,
+      "xmax": 113.21119545130506,
+      "ymax": 64.53827080955571
+    },
+    "xAxisLabel": "Number of Flips",
+    "yAxisLabel": "Expected Utility",
+    "__v12ViewportLatexStash": {
+      "xmin": "-25.96213969306993",
+      "xmax": "113.21119545130506",
+      "ymin": "-10.593863844219989",
+      "ymax": "64.53827080955571"
+    }
+  },
+  "expressions": {
+    "list": [
+      {
+        "type": "text",
+        "id": "102",
+        "text": "Same rules, but flip the coin M times, if Heads on the Mth flip the payoff is 2^M, of no heads, then the payoff is 2^{M+1}"
+      },
+      {
+        "type": "expression",
+        "id": "5",
+        "color": "#000000",
+        "latex": "E_{V}\\left(M\\right)=\\sum_{n=1}^{M}\\frac{1}{2^{n}}\\cdot2^{n}+\\left(1-\\sum_{n=1}^{M}\\frac{1}{2^{n}}\\right)\\cdot2^{M+1}",
+        "hidden": true
+      },
+      {
+        "type": "text",
+        "id": "111",
+        "text": "Even though high payoffs are extremely unlikely, their contribution to expected value does not vanish, because payoff growth exactly offsets probability decay."
+      },
+      {
+        "type": "expression",
+        "id": "1",
+        "color": "#c74440",
+        "latex": "E_{U}\\left(M\\right)=\\sum_{n=1}^{M}\\frac{1}{2^{n}}\\cdot\\ln\\left(2^{n}\\right)+\\left(1-\\sum_{n=1}^{M}\\frac{1}{2^{n}}\\right)\\ln\\left(2^{M+1}\\right)",
+        "hidden": true
+      },
+      {
+        "type": "text",
+        "id": "113",
+        "text": "Although payoffs grow rapidly at high numbers of flips, their impact on expected utility is negligible because low probability and diminishing marginal utility dominate."
+      },
+      {
+        "type": "expression",
+        "id": "2",
+        "color": "#2d70b3",
+        "latex": "N=20",
+        "hidden": true,
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": "1",
+          "max": "100",
+          "step": "1"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "3",
+        "color": "#388c46",
+        "latex": "E_{U}\\left(N\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "6",
+        "color": "#c74440",
+        "latex": "E_{V}\\left(N\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "98",
+        "color": "#6042a6",
+        "latex": "p_{heads}=1-.5^{N}"
+      },
+      {
+        "type": "expression",
+        "id": "99",
+        "color": "#000000",
+        "latex": "l_{ow}=2"
+      },
+      {
+        "type": "expression",
+        "id": "100",
+        "color": "#c74440",
+        "latex": "h_{igh}=2^{N+1}"
+      },
+      {
+        "type": "expression",
+        "id": "103",
+        "color": "#388c46",
+        "latex": "E_{Val}=E_{V}\\left(N\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "105",
+        "color": "#000000",
+        "latex": "p_{aboveEV}=1-\\sum_{n=1}^{\\operatorname{ceil}\\left(\\log_{2}\\left(E_{V}\\left(N\\right)\\right)\\right)-1}\\frac{1}{2^{n}}"
+      },
+      {
+        "type": "folder",
+        "id": "109",
+        "title": "Labels",
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "94",
+        "folderId": "109",
+        "color": "#000000",
+        "latex": "\\left(N,0\\right)",
+        "showLabel": true,
+        "label": "N=${N}",
+        "labelOrientation": "below",
+        "__stashed_V12PointStyle": "DIAMOND"
+      },
+      {
+        "type": "expression",
+        "id": "97",
+        "folderId": "109",
+        "color": "#000000",
+        "latex": "\\left(N,E_{V}\\left(N\\right)\\right)",
+        "showLabel": true,
+        "label": "EV=$${E_Val}; low=$${l_ow}, high=$${h_igh}; Prob(payoff`\\geq`EV)=${p_aboveEV}",
+        "labelOrientation": "right",
+        "__stashed_V12PointStyle": "DIAMOND"
+      },
+      {
+        "type": "expression",
+        "id": "95",
+        "folderId": "109",
+        "color": "#000000",
+        "latex": "\\operatorname{polygon}\\left(\\left(N,E_{U}\\left(N\\right)\\right),\\left(N,E_{V}\\left(N\\right)\\ \\right)\\right)",
+        "lineStyle": "DASHED"
+      },
+      {
+        "type": "expression",
+        "id": "9",
+        "folderId": "109",
+        "color": "#6042a6",
+        "latex": "F=\\left[1...50\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "7",
+        "folderId": "109",
+        "color": "#2d70b3",
+        "latex": "\\left(F,E_{V}\\left(F\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "8",
+        "folderId": "109",
+        "color": "#c74440",
+        "latex": "\\left(F,E_{U}\\left(F\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "106",
+        "folderId": "109",
+        "color": "#c74440",
+        "latex": "\\left(40,E_{U}\\left(40\\right)\\right)",
+        "showLabel": true,
+        "label": "Expected Utility (Risk Averse)",
+        "labelOrientation": "above"
+      },
+      {
+        "type": "expression",
+        "id": "107",
+        "folderId": "109",
+        "color": "#2d70b3",
+        "latex": "\\left(40,E_{V}\\left(40\\right)\\right)",
+        "showLabel": true,
+        "label": "Expected value (Risk Neutral)",
+        "labelOrientation": "above"
+      }
+    ]
+  },
+  "includeFunctionParametersInRandomSeed": true,
+  "doNotMigrateMovablePointStyle": true
+}
