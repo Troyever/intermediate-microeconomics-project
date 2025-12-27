@@ -67,30 +67,44 @@ h2 {
 }
 
 .navbar {
-  width: 100%;
+
+  max-width: 1100px;
+  margin: 10px auto 0; 
+  
+  border-radius: 8px;
   background: #111827;
   color: #fff;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  padding: 0 calc((100% - 1100px) / 2 + 40px);
+  
   height: 56px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  
   position: sticky;
-  top: 0;
+  top: 10px;
   z-index: 1000;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Segoe UI", Roboto, sans-serif;
   box-sizing: border-box;
 }
 
-@media (max-width: 1100px) {
+.nav-left {
+  margin-right: 0;
+}
+
+@media (max-width: 1140px) {
   .navbar {
-    padding: 0 40px;
+    max-width: calc(100% - 40px);
+    margin: 10px 20px;
   }
 }
 
 @media (max-width: 600px) {
   .navbar {
-    padding: 0 14px;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
   }
 }
 
