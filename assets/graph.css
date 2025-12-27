@@ -282,15 +282,9 @@
   color: #111827;
 }
 
-/* ===== Navbar align to 1000px container (CSS-only, correct) ===== */
+/* ===== Navbar match Figure 2 (fixed side padding) ===== */
 .navbar{
-  /* keep the background full-width */
   width: 100%;
-
-  /* align navbar content with .container (max-width: 1000px) */
-  padding-left: max(24px, calc((100vw - 1000px) / 2));
-  padding-right: max(24px, calc((100vw - 1000px) / 2));
-
-  /* ensure left/right stay on edges */
+  padding: 0 24px;          /* like figure 2 */
   justify-content: space-between;
 }
