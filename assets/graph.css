@@ -217,3 +217,7 @@ h2 {
 #calculator * {
   pointer-events: auto;
 }
+
+.fold-target { display: none; }
+.fold-target.show { display: block; }
+
