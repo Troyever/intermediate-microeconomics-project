@@ -1,4 +1,3 @@
-const NAVBAR_HTML=`
 <nav class="navbar">
 
   <div class="nav-menu">
@@ -56,14 +55,4 @@ const NAVBAR_HTML=`
     </div>
     
   </div>
-</nav>`;
-
-
-(function loadNavbar() {
-  const container = document.getElementById("navbar-container");
-  if (!container) return;
-
-  container.innerHTML = NAVBAR_HTML;
-
-  document.dispatchEvent(new Event("navbar-loaded"));
-})();
+</nav>
