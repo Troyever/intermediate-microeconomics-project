@@ -1,94 +1,77 @@
- * {
-      box-sizing: border-box;
-    }
+* {
+  box-sizing: border-box;
+}
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Segoe UI", Roboto, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f8f8f8;
-      color: #333;
-      line-height: 1.6;
-    }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
 
-    h1 {
-      text-align: center;
-      margin: 0 0 32px;
-      font-size: 1.8rem;
-    }
+h1 {
+  text-align: center;
+  margin: 0 0 32px;
+  font-size: 1.8rem;
+}
 
-    h2 {
-      margin: 0 0 16px;
-      font-size: 1.3rem;
-    }
+h2 {
+  margin: 0 0 16px;
+  font-size: 1.3rem;
+}
 
-    .section {
-      background: #fff;
-      padding: 20px 20px 24px;
-      border-radius: 12px;
-      margin-bottom: 28px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-    }
+.section {
+  background: #fff;
+  padding: 20px 20px 24px;
+  border-radius: 12px;
+  margin-bottom: 28px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
 
-    /* Desmos graph：sel adjust width */
-    .graph-wrapper {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16 / 9;       /* ratio can change i.e; 4 / 3 */
-    }
+.graph-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
 
-    #calculator {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-    }
+#calculator {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
 
 #calculator-3d {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-    }
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
 
-    /* video adapt size automatically */
-    .video-frame {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      border-radius: 10px;
-      overflow: hidden;
-    }
+.video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
-    .video-frame iframe {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
+.video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 
-      h1 {
-        font-size: 1.4rem;
-      }
-
-      h2 {
-        font-size: 1.1rem;
-      }
-
-      .section {
-        padding: 16px 14px 20px;
-        border-radius: 10px;
-      }
-    }
 .navbar {
   width: 100%;
   background: #111827;
   color: #fff;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  
   padding: 0 calc((100% - 1100px) / 2 + 40px);
-  
   height: 56px;
   display: flex;
   align-items: center;
@@ -96,7 +79,7 @@
   top: 0;
   z-index: 1000;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Segoe UI", Roboto, sans-serif;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 @media (max-width: 1100px) {
@@ -110,7 +93,21 @@
     padding: 0 14px;
   }
 }
-/* ================== Dropdown (single clean version) ================== */
+
+.nav-left {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-right: 32px;
+}
+
+.nav-left a { color: #fff; }
+.nav-right a { color: #fff; }
+
+.nav-menu {
+  display: flex;
+  gap: 28px;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -151,7 +148,6 @@
 
 .dropdown-content a:hover { background: rgba(255,255,255,0.08);color:#fff }
 
-/* Textbox */
 .textbox {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -170,14 +166,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-
   display: flex;
   justify-content: space-between;
   gap: 4px;
-
   padding: 6px 10px 10px; 
   background: #fff;
-
   border-top: 1px solid #eee; 
 }
 
@@ -188,8 +181,6 @@
   border-radius: 9999px;
   white-space: nowrap;
 }
-
-/* === Interactive Graph header === */
 
 .section-header{
   display: flex;
@@ -203,7 +194,6 @@
   margin: 0;
 }
 
-/* Desmos redirect button */
 .desmos-btn{
   font-size: 0.85rem;
   padding: 6px 12px;
@@ -236,37 +226,3 @@
 #calculator * {
   pointer-events: auto;
 }
-
-/* === Interactive Graph header === */
-
-.section-header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 16px;
-}
-
-.section-header h2{
-  margin: 0;
-}
-
-/* Open in Desmos button */
-.desmos-btn{
-  font-size: 0.85rem;
-  padding: 6px 12px;
-  border-radius: 9999px;
-  border: 1px solid #e5e7eb;
-  background: #fff;
-  color: #374151;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: all 0.15s ease;
-}
-
-.desmos-btn:hover{
-  background: #f3f4f6;
-  border-color: #d1d5db;
-  color: #111827;
-}
-
